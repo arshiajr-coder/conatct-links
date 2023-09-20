@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "fa-font";
-    src: url(/assets/font/Estedad-Medium.woff2) format(woff2);
+    src: url(../assets/font/Estedad-Medium.woff2) format(woff2);
 }
 
 * {
