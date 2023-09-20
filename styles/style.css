@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Roboto+Condensed&family=Roboto:wght@500&display=swap');
+
+@font-face {
+    font-family: "fa-font";
+    src: url(/assets/font/Estedad-Medium.woff2) format(woff2);
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chat{
+    width: 350px;
+    height: 90vh;
+    border: 10px solid black; 
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.chat-header{
+    justify-content: space-between;
+    background-color: rgb(109, 152, 221);
+    color: #fff;
+    padding: .6rem;
+}
+
+.chat-header div.center:nth-child(1){
+    gap: .5rem;
+}
+.chat-header div.center:nth-child(2){
+    justify-content: flex-start;
+}
+
+.chat-name{
+    font-size: 1rem;
+}
+
+.chat-img img{
+    width: 40px;
+    margin-bottom: -.2rem;
+    margin-left: .3rem;
+}
+
+.menu-icon, .search-icon, .back-icon{
+    cursor: pointer;
+    border-radius: 50%;
+    padding: .3rem;
+    transition: .3s;
+}
+
+.menu-icon, .search-icon{
+    padding: .6rem .7rem;
+}
+
+.back-icon:hover, .menu-icon:hover, .search-icon:hover{
+    background-color: rgb(131, 166, 221);
+}
+
+.chat-main{
+    direction: rtl;
+    position: relative;
+    background-image: url(/assets/img/background.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.post{
+    flex-direction: column;
+    position: absolute;
+    right: .2rem;
+    bottom: 7.5rem;
+}
+
+.post-content{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(25, 45, 77);
+    border-radius: 5px;
+}
+
+.post-content div{
+    margin: 0 auto;
+    margin-top: .2rem;
+    width: 242px;
+}
+
+.post-content img{
+    width: 242px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 0 -22px;
+    margin-top: 2px;
+}
+
+.post-content p{
+    font-family: "fa-font";
+    color: #fff;
+    font-size: .8rem;
+    padding: .37rem .5rem;
+    line-height: 1.5rem;
+}
+
+.post-content a{
+    float: left;
+    color: #fff;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.post-buttons{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+}
+
+.btn{
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(33, 51, 78, 0.7);
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 7px;
+    transition: all .2s;
+}
+
+.btn:nth-child(1){
+    margin-top: 2px;
+}
+
+.btn:nth-child(2), .btn:nth-child(3){
+    width: 49.3%;
+}
+
+.btn:nth-child(2) p, .btn:nth-child(3) p{
+    font-size: .7rem;
+}
+
+.btn:hover{
+    background-color: rgba(41, 69, 109, 0.6);
+}
+
+.post-buttons p{
+    color: #fff;
+    font-family: "fa-font";
+    font-size: .8rem;
+}
+
+.goto-icon{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    transform: rotate(-45deg);
+}
+
+.post-buttons svg{
+    color: #fff;
+}
+
+
+.chat-footer{
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 18px);
+    padding: .6rem .8rem;
+    background-color: #fff;
+    color: rgb(46, 46, 46);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.chat-footer svg{
+    cursor: pointer;
+}
+
+.chat-footer input{
+    width: 100%;
+    height: 100%;
+    padding: 0rem .8rem .3rem .8rem;
+}
+
+.voice-icon{
+    margin-left: .5rem;
+}
+
+.send-icon{
+    transform: rotate(43deg);
+    color: rgb(109, 152, 221);
+    margin: 2px 5px 0 0;
+}
+
