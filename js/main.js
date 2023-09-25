@@ -10,3 +10,7 @@ function inputChange(){
         document.querySelector(".link-voice").classList.add("hidden")
     }
 }
+
+function editPost(){
+    
+}
