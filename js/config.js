@@ -30,15 +30,15 @@ const postData = {
     },
     button3: {
       name: "پیج اینستا 📸",
-      link: "https://t.me/DevArshia1",
+      link: "https://t.me/https://instagram.com/im-arshiajr",
     },
     button4: {
       name: "سایت شخصی 🌐",
-      link: "https://t.me/DevArshia2",
+      link: "https://arshiajr-coder.github.io/arshiaweb/",
     },
     button5: {
       name: "کانال سورس ها و پروژه ها 📢",
-      link: "https://t.me/DevArshia3",
+      link: "https://t.me/coderna_js",
     }
   }
 };
