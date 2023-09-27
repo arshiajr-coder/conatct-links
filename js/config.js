@@ -1,37 +1,57 @@
 const buttonsContainer = document.querySelector(".post-buttons");
+const postContents = document.querySelector(".post-content");
+const postImg = document.querySelector(".post-img");
+const postText = document.querySelector(".post-text");
+const postId = document.querySelector(".post-id");
 
-const buttonsData = {
-  button1: {
-    name: "دکمه تستی۱",
-    link: "https://t.me/DevArshia",
+const postData = {
+  imgLink: "./assets/img/ProgrammingIllustration.png",
+
+  text: `
+  باحال شده نه؟ هنر نزد ایرانیان است و بس . 
+  من عرشیا جعفرنژادم 
+  و اینا کل لینک های منن 
+  از کانال تلگرامی بگیر تا سایت شخصی
+  `,
+
+  id: {
+    name: "coderna_js@ 🎲",
+    link: "https://t.me/coderna_js"
   },
-  button2: {
-    name: "دکمه تستی۲",
-    link: "https://github.com/arshiajr-coder",
-  },
-  button3: {
-    name: "دکمه ی تستی۳",
-    link: "https://t.me/DevArshia1",
-  },
-  button4: {
-    name: "دکمه تستی۴",
-    link: "https://t.me/DevArshia2",
-  },
-  button5: {
-    name: "دکمه تستی۵",
-    link: "https://t.me/DevArshia3",
+
+  buttonsData:{
+    button1: {
+      name: "تلگرام شخصی 👤",
+      link: "https://t.me/DevArshia",
+    },
+    button2: {
+      name: "صفحه گیت هاب 🔅",
+      link: "https://github.com/arshiajr-coder",
+    },
+    button3: {
+      name: "پیج اینستا 📸",
+      link: "https://t.me/DevArshia1",
+    },
+    button4: {
+      name: "سایت شخصی 🌐",
+      link: "https://t.me/DevArshia2",
+    },
+    button5: {
+      name: "کانال سورس ها و پروژه ها 📢",
+      link: "https://t.me/DevArshia3",
+    }
   }
 };
 
-const keys = Object.keys(buttonsData);
+const keys = Object.keys(postData.buttonsData);
 
 for (let i = 0; i < keys.length; i++) {
   const newButton = document.createElement("div");
   newButton.className = "btn";
   newButton.innerHTML = `<a href=${
-    buttonsData[keys[i]].link
+    postData.buttonsData[keys[i]].link
   } target="_blank" class="center">
-    <p>${buttonsData[keys[i]].name}</p>
+    <p>${postData.buttonsData[keys[i]].name}</p>
     <div class="goto-icon">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,3 +70,8 @@ for (let i = 0; i < keys.length; i++) {
     </a>`;
     buttonsContainer.appendChild(newButton)
 }
+
+postImg.children[0].src = postData.imgLink
+postText.innerHTML = postData.text;
+postId.href = postData.id.link
+postId.children[0].innerHTML = postData.id.name
