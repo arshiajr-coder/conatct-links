@@ -236,8 +236,15 @@ svg {
 }
 
 @media screen and (max-height: 600px) {
+
+    .chat {
+        height: 99vh;
+    }
+
     .post-content img {
-        display: none;
+        height: 90px;
+        object-fit: cover;
+        object-position: 0 -28px;
     }
 
     .post-content .edit-post {
@@ -245,19 +252,4 @@ svg {
         top: auto;
         padding: .3rem .3rem .1rem .3rem;
     }
-}
-
-
-.edit-box {
-    width: 300px;
-    height: 300px;
-    padding: .7rem;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px, rgba(0, 0, 0, 0.3) 0px 3px 6px;
-    background-color: rgba(7, 11, 244, 0.3);
-}
-.edit-box select{
-    padding: .3rem .5rem;
-    margin-right: .3rem;
-    
 }
