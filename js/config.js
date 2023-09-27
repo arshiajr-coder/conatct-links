@@ -5,43 +5,45 @@ const postText = document.querySelector(".post-text");
 const postId = document.querySelector(".post-id");
 
 const postData = {
-  imgLink: "./assets/img/ProgrammingIllustration.png",
+  imgLink: "./assets/img/ProgrammingIllustration.png", //آدرس عکس
 
   text: `
   باحال شده نه؟ هنر نزد ایرانیان است و بس . 
   من عرشیا جعفرنژادم 
   و اینا کل لینک های منن 
   از کانال تلگرامی بگیر تا سایت شخصی
-  `,
+  `, //متن زیر عکس
 
   id: {
-    name: "coderna_js@ 🎲",
-    link: "https://t.me/coderna_js"
+    name: "coderna_js@ 🎲", //عبارت زیر متن
+    link: "https://t.me/coderna_js" //لینک عبارت
   },
 
   buttonsData:{
     button1: {
-      name: "تلگرام شخصی 👤",
-      link: "https://t.me/DevArshia",
+      name: "تلگرام شخصی 👤", //اسم دکمه اول
+      link: "https://t.me/DevArshia", // لینک دکمه
     },
     button2: {
-      name: "صفحه گیت هاب 🔅",
-      link: "https://github.com/arshiajr-coder",
+      name: "صفحه گیت هاب 🔅",  //اسم دکمه اول
+      link: "https://github.com/arshiajr-coder", // لینک دکمه
     },
     button3: {
-      name: "پیج اینستا 📸",
-      link: "https://t.me/https://instagram.com/im-arshiajr",
+      name: "پیج اینستا 📸",  //اسم دکمه اول
+      link: "https://t.me/https://instagram.com/im-arshiajr", // لینک دکمه
     },
     button4: {
-      name: "سایت شخصی 🌐",
-      link: "https://arshiajr-coder.github.io/arshiaweb/",
+      name: "سایت شخصی 🌐",  //اسم دکمه اول
+      link: "https://arshiajr-coder.github.io/arshiaweb/", // لینک دکمه
     },
     button5: {
-      name: "کانال سورس ها و پروژه ها 📢",
-      link: "https://t.me/coderna_js",
+      name: "کانال سورس ها و پروژه ها 📢",  //اسم دکمه اول
+      link: "https://t.me/coderna_js", // لینک دکمه
     }
   }
 };
+
+// شما میتونید هر چند تا دکمه داشته باشید اما توجه داشته باشید که دکمه های 2 و 3 کوچکترند
 
 const keys = Object.keys(postData.buttonsData);
 
